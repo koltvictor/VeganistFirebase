@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Card, Col, Container } from "react-bootstrap";
 
 export default function RecipeCard({ recipe }) {
@@ -11,21 +10,27 @@ export default function RecipeCard({ recipe }) {
             maxWidth: "100%",
             margin: "1rem",
             padding: "1rem",
-            backgroundColor: "lightgreen",
+            backgroundColor: "transparent",
+            border: "none",
             textAlign: "center",
           }}
         >
           <Card.Body>
-            <Card.Img
-              src={recipe.image}
-              //   className="recipeImage"
-              alt={recipe.title}
-              height="250"
-              width="300"
-            />
-            <Card.Title>{recipe.name}</Card.Title>
+            <a href={`/${recipe.id}`} className="recipeLink">
+              <Card.Img
+                src={recipe.image}
+                alt={recipe.title}
+                height="250"
+                width="300"
+                className="recipeLargeImage"
+              />
+              <Card.Title>
+                <br />
+
+                {recipe.name}
+              </Card.Title>
+            </a>
           </Card.Body>
-          <Link to={`/${recipe.id}`}>See the Recipe</Link>
         </Card>
       </Col>
     </Container>

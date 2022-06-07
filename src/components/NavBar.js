@@ -12,7 +12,7 @@ export default function NavBar() {
         className="navBar"
       >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="navBrand">
             TheVeganist
             <img src="https://i.imgur.com/BJyNCt8.jpg" className="logo" />
           </Navbar.Brand>
@@ -20,7 +20,7 @@ export default function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/recipes">Recipe Index</Nav.Link>
-              <Nav.Link href="/pantry">Pantry</Nav.Link>
+              <Nav.Link href="/pantry">Vegan Pantry</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">

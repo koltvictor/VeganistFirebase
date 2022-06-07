@@ -13,16 +13,17 @@ export default function Display({ data }) {
             <Container>
               <Col>
                 <Card className="displayCard" key={data.id}>
-                  <Card.Body>
-                    <Card.Title>{data.name}</Card.Title>
-                    <Card.Img
-                      src={data.image}
-                      alt={data.name}
-                      className="recipeImage"
-                    />
-                    <br />
-                    <a href={`/${data.id}`}>See the Recipe</a>
-                  </Card.Body>
+                  <a href={`/${data.id}`} className="recipeLink">
+                    <Card.Body>
+                      <Card.Title>{data.name}</Card.Title>
+                      <Card.Img
+                        src={data.image}
+                        alt={data.name}
+                        className="recipeImage"
+                      />
+                      <br />
+                    </Card.Body>
+                  </a>
                 </Card>
               </Col>
             </Container>
