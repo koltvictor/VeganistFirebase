@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import RecipeList from "./components/RecipeList";
 import RecipeDetail from "./components/RecipeDetail";
+import Pantry from "./components/Pantry";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -47,6 +48,7 @@ function App() {
           }
         />
         <Route exact path="/:id" element={<RecipeDetail />} />
+        <Route path="/pantry" element={<Pantry />} />
       </Routes>
     </div>
   );

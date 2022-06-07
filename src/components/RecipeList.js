@@ -11,7 +11,9 @@ export default function RecipeList({
 }) {
   return (
     <Container>
+      <br />
       <Search search={search} setSearch={setSearch} />
+      <br />
       <Row xs={1} md={3} className="g-4">
         {filteredRecipes.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />

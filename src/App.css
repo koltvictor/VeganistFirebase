@@ -14,9 +14,11 @@
   text-align: center;
 }
 
-.searchContainer{
-  text-align: center!important;
+.displayContainer{
+  background-color: rgba(7, 255, 98, 0.5);
+  padding:4vh;
 }
+
 .homeContainer {
   text-align: center;
   padding-top: 2vh;
@@ -24,11 +26,20 @@
   font-weight: bolder;
 }
 
+.logo {
+  width: 2rem;
+}
+
 .navBar {
   font-weight: bolder;
   font-size: 1.5vh;
 }
 
-.logo {
-  width: 2rem;
+.recipeImage{
+  max-width: 50%;
+  height: 10rem;
+}
+
+.searchContainer{
+  text-align: center!important;
 }
