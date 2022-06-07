@@ -1,17 +1,53 @@
-import { useState, useEffect } from "react";
+import { useQuery } from "react-query";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import RecipeList from "./components/RecipeList";
+import RecipeDetail from "./components/RecipeDetail";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [search, setSearch] = useState("");
+  const fetchRecipes = async () => {
+    const response = await fetch("https://veganist-db.herokuapp.com/recipes");
+    return response.json();
+  };
 
-  useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
+  const { data, status } = useQuery("recipes", fetchRecipes);
+
+  if (status === "loading") {
+    return <div>Hold tight! Good stuff is loading ...</div>;
+  }
+
+  if (status === "error") {
+    return <div>Error!</div>;
+  }
+
+  const filteredRecipes = data.filter(
+    (recipe) =>
+      (recipe.name || "").toLowerCase().includes(search.toLowerCase()) ||
+      (recipe.ingredients || "").toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="App">
-      <h1>Page Count: {count}</h1>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home data={data} />} />
+        <Route
+          path="/recipes"
+          element={
+            <RecipeList
+              filteredRecipes={filteredRecipes}
+              search={search}
+              setSearch={setSearch}
+            />
+          }
+        />
+        <Route exact path="/:id" element={<RecipeDetail />} />
+      </Routes>
     </div>
   );
 }
