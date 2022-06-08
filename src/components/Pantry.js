@@ -358,7 +358,7 @@ export default function Pantry() {
           </ul>
           <br />
           <p>
-            <strong>Refrigerator and Freezer Essentials</strong>
+            <strong>KITCHEN ESSENTIALS</strong>
           </p>
           <ul>
             <li>tofu</li>
@@ -381,6 +381,7 @@ export default function Pantry() {
             <li>parsley</li>
             <li>cilantro</li>
             <li>berries</li>
+            <li>avocados</li>
           </ul>
         </Container>
       </Container>
