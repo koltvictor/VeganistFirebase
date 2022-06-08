@@ -15,6 +15,8 @@ export default function Home({ data }) {
           recipes.
         </p>
         <br />
+        <br />
+        <br />
         <Container className="displayContainer">
           <Display data={data} />
         </Container>
