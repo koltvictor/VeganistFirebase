@@ -6,12 +6,13 @@ export default function RecipeCard({ recipe }) {
     <Container>
       <Col>
         <Card
+          className="recipeCard"
           style={{
             maxWidth: "100%",
             margin: "1rem",
             padding: "1rem",
             backgroundColor: "transparent",
-            border: "none",
+            border: "1px solid black",
             textAlign: "center",
           }}
         >
