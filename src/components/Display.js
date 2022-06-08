@@ -12,7 +12,15 @@ export default function Display({ data }) {
           return (
             <Container>
               <Col>
-                <Card className="displayCard" key={data.id}>
+                <Card
+                  className="displayCard"
+                  key={data.id}
+                  style={{
+                    border: "1px solid black",
+                    boxShadow:
+                      "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+                  }}
+                >
                   <a href={`/${data.id}`} className="recipeLink">
                     <Card.Body>
                       <Card.Title>{data.name}</Card.Title>

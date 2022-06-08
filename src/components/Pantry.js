@@ -13,9 +13,9 @@ export default function Pantry() {
           Pantry
         </h3>
         <h5 className="centered">
-          Vegan Pantry Staples & Basics – Looking to stock your kitchen with
-          whole food, plant-based items? Let this comprehensive guide help you
-          build a healthy, vegan kitchen pantry.
+          Looking to stock your kitchen with whole food, plant-based items? Let
+          this comprehensive guide help you build your own healthy, vegan
+          kitchen pantry.
         </h5>
       </Container>
       <br />
@@ -25,10 +25,10 @@ export default function Pantry() {
           <hr />
           <p>
             From the pantry to cupboards to the refrigerator, the following is a
-            list of staples you would find me using regularly in my kitchen. All
-            pantry and refrigerator items are part of a healthy, plant-based
-            diet. All items are ones that I have used and can be found within
-            the vegan recipes.
+            list of staples you would find me using regularly in my own kitchen.
+            All pantry and refrigerator items are part of a plant-based diet,
+            and are products that I have used and can be found within the vegan
+            recipes.
             <br />
             <br />I hope you find this useful and inspring, and just FYI I only
             recommend products I have tried and truly trust!
@@ -47,16 +47,16 @@ export default function Pantry() {
           <p>
             <strong>LEGUMES</strong>
             <br />
-            Legumes are the main proteins in a vegan diet. They are inexpensive
-            and extremely versatile. Legumes are low in fat, high in protein and
+            Legumes are an easy source of protein in a vegan diet and are
+            extremely versatile. Legumes are low in fat, high in protein and
             fiber, and carry essential micronutrients and phytochemicals to keep
             you at your best. Cooked fresh is best, but canned is great too for
-            those who need a more convenient option. From Hummus (which I eat
-            almost every day), Veggie Burgers, tacos, burritos, Creamy Broccoli
-            & Red Lentil Soup or Split Pea Soup, Black Bean, Broccoli & Avocado
-            Salad, Lentil & Hummus Wraps, Italian Bean balls, to pasta dishes,
-            all types of legumes can be used in various ways creating an endless
-            supply of high protein, plant-based meals.
+            those who need a more convenient option. From Hummus, Veggie
+            Burgers, tacos, burritos, Creamy Broccoli & Red Lentil Soup or Split
+            Pea Soup, Black Bean, Broccoli & Avocado Salad, Lentil & Hummus
+            Wraps, to pasta dishes, all types of legumes can be used in various
+            ways creating an endless supply of high protein, plant-based meals.
+            Just make sure you've got some beano on the side!
           </p>
           <ul>
             <li>edamame</li>
