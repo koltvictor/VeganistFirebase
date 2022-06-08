@@ -15,8 +15,9 @@
 }
 
 .displayContainer{
-  background-color: rgba(7, 255, 98, 0.5);
+  background-color: rgba(200, 200, 200, 0.5);
   padding:4vh;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .homeContainer {
