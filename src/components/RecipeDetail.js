@@ -13,6 +13,8 @@ export default function RecipeDetail() {
       .then((data) => setRecipeShowing(data));
   }, [id]);
 
+  console.log(recipeShowing.cuisine);
+
   return (
     <Container>
       <h3>Recipe Details</h3>
@@ -36,10 +38,10 @@ export default function RecipeDetail() {
           <p>
             Directions:
             <br />
-            {recipeShowing.recipe}
+            {recipeShowing.instructions}
           </p>
           <p>Cuisine: {recipeShowing.cuisine}</p>
-          {/* <p>Course(s): {recipeShowing.course}</p> */}
+          <p>Course(s): {recipeShowing.meal}</p>
           <a href="/recipes">Back to recipes</a>
           <br />
         </Card.Body>

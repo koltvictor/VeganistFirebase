@@ -87,7 +87,7 @@
 
 .recipeImage{
   max-width: 50%;
-  height: 10rem;
+  height: auto;
 }
 
 .recipeLink{
@@ -101,7 +101,7 @@
 
 .recipeLargeImage{
   max-width: 100%;
-  height: 11rem;
+  height: 50%;
 }
 
 .searchContainer{
