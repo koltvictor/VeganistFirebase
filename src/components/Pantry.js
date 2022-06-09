@@ -8,7 +8,11 @@ export default function Pantry() {
         <h3 className="centered">
           <span>
             <strong>TheVeganist</strong>
-            <img src="https://i.imgur.com/BJyNCt8.jpg" className="logo" />
+            <img
+              src="https://i.imgur.com/BJyNCt8.jpg"
+              className="logo"
+              alt="logo"
+            />
           </span>{" "}
           Pantry
         </h3>

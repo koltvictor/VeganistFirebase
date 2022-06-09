@@ -29,7 +29,9 @@ function App() {
   const filteredRecipes = data.filter(
     (recipe) =>
       (recipe.name || "").toLowerCase().includes(search.toLowerCase()) ||
-      (recipe.ingredients || "").toLowerCase().includes(search.toLowerCase())
+      (recipe.ingredients || "").toLowerCase().includes(search.toLowerCase()) ||
+      (recipe.cuisine || "").toLowerCase().includes(search.toLowerCase()) ||
+      (recipe.meal || "").toLowerCase().includes(search.toLowerCase())
   );
 
   return (

@@ -13,8 +13,6 @@ export default function RecipeDetail() {
       .then((data) => setRecipeShowing(data));
   }, [id]);
 
-  console.log(recipeShowing.cuisine);
-
   return (
     <Container>
       <h3>Recipe Details</h3>

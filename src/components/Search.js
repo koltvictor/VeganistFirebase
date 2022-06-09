@@ -7,7 +7,7 @@ export default function Search({ search, setSearch }) {
       <div className="searchBar">
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search by recipe, ingredients, cuisine, or meal type"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="search_input"

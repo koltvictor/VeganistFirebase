@@ -107,3 +107,14 @@
 .searchContainer{
   text-align: center!important;
 }
+
+.search_input{
+  width: 50%;
+  height: 1.2rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding-left: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default function NavBar() {
   return (
@@ -14,7 +14,11 @@ export default function NavBar() {
         <Container>
           <Navbar.Brand href="/" className="navBrand">
             TheVeganist
-            <img src="https://i.imgur.com/BJyNCt8.jpg" className="logo" />
+            <img
+              src="https://i.imgur.com/BJyNCt8.jpg"
+              className="logo"
+              alt="logo"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
