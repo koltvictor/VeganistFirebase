@@ -1,16 +1,15 @@
 import React from "react";
-import Search from "./Search";
 import RecipeCard from "./RecipeCard";
 import { Container, Row } from "react-bootstrap";
 
-export default function RecipeList({ search, setSearch, filteredRecipes }) {
+export default function Dinner({ data }) {
+  const dinnerFoods = data.filter((item) => {
+    return item.meal === "Dinner" || item.meal === "Lunch or Dinner";
+  });
   return (
     <Container>
-      <br />
-      <Search search={search} setSearch={setSearch} />
-      <br />
       <Row xs={1} md={3} className="g-4">
-        {filteredRecipes.map((recipe) => (
+        {dinnerFoods.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />
         ))}
       </Row>

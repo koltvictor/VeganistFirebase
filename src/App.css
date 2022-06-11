@@ -14,6 +14,11 @@
   text-align: center;
 }
 
+.centeredCard {
+  margin: auto;
+  padding-bottom: 4vh;
+}
+
 .centeredImage{
   text-align: center;
   margin: auto;
@@ -88,6 +93,7 @@
 .recipeImage{
   max-width: 50%;
   height: auto;
+  border: 1px solid black;
 }
 
 .recipeLink{

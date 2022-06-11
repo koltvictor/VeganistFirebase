@@ -14,12 +14,16 @@ export default function RecipeDetail() {
   }, [id]);
 
   return (
-    <Container>
-      <h3>Recipe Details</h3>
-      <a href="/recipes">Back to recipes</a>
+    <Container className="centeredCard">
       <br />
       <br />
-      <Card style={{ width: "50%" }}>
+      <div className="centered">
+        <h3>Recipe Details</h3>
+        <a href="/recipes">Back to recipes</a>
+      </div>
+      <br />
+      <br />
+      <Card style={{ width: "50%" }} className="centeredImage">
         <Card.Body>
           <Card.Img
             className="recipeImage"
@@ -27,6 +31,8 @@ export default function RecipeDetail() {
             alt={recipeShowing.name}
             height="500"
           />
+          <br />
+          <br />
           <h3>{recipeShowing.name}</h3>
           <p>
             Ingredients:

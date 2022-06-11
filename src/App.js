@@ -8,6 +8,10 @@ import NavBar from "./components/NavBar";
 import RecipeList from "./components/RecipeList";
 import RecipeDetail from "./components/RecipeDetail";
 import Pantry from "./components/Pantry";
+import Breakfast from "./components/Breakfast";
+import Lunch from "./components/Lunch";
+import Dinner from "./components/Dinner";
+import Dessert from "./components/Dessert";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -51,6 +55,10 @@ function App() {
         />
         <Route exact path="/:id" element={<RecipeDetail />} />
         <Route path="/pantry" element={<Pantry />} />
+        <Route path="/breakfast" element={<Breakfast data={data} />} />
+        <Route path="/lunch" element={<Lunch data={data} />} />
+        <Route path="/dinner" element={<Dinner data={data} />} />
+        <Route path="/dessert" element={<Dessert data={data} />} />
       </Routes>
     </div>
   );

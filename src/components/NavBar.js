@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 export default function NavBar() {
   return (
@@ -25,19 +25,15 @@ export default function NavBar() {
             <Nav className="me-auto">
               <Nav.Link href="/recipes">Recipe Index</Nav.Link>
               <Nav.Link href="/pantry">Vegan Pantry</Nav.Link>
-              {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
+              <NavDropdown title="Courses" id="collapsible-nav-dropdown">
+                <NavDropdown.Item href="/breakfast">Breakfast</NavDropdown.Item>{" "}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown> */}
+                <NavDropdown.Item href="/lunch">Lunch</NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/dinner">Dinner</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/dessert">Dessert</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             {/* <Nav>
               <Nav.Link href="#deets">More deets</Nav.Link>
